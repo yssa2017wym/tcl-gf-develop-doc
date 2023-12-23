@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="&#21512;&#21516;&#28165;&#21333;" id="合同清单">
+
+    <p>
+        记录每个产品下，需要签署的合同清单和版本。
+        并展示具体的签署主体。
+    </p>
+
+    <!--    <note>-->
+    <!--        <p><control>Highlight important information.</control></p>-->
+    <!--        <p>-->
+    <!--            You can change this element to <code>&lt;tip&gt;</code> or <code>&lt;warning&gt;</code>.-->
+    <!--        </p>-->
+    <!--    </note>-->
+
+    <table>
+        <tr>
+            <td>产品</td>
+            <td>合同</td>
+            <td>合同编号</td>
+            <td>版本</td>
+            <td>备注</td>
+        </tr>
+        <tr>
+            <td>光鑫宝-共富</td>
+            <td>极光信息使用授权书</td>
+            <td>PC001</td>
+        </tr>
+        <tr>
+            <td>光鑫宝-共富</td>
+            <td>承建服务合同</td>
+            <td>PC002</td>
+        </tr>
+    </table>
+
+    <chapter title="Before you start" id="before">
+        <p>It is good practice to list the prerequisites that are required or recommended.</p>
+
+        <p>Make sure that:</p>
+
+        <list>
+            <li>First prerequisite</li>
+            <li>Second prerequisite.</li>
+        </list>
+    </chapter>
+
+    <chapter title="How to perform a task" id="how-to">
+        <p>
+            Avoid writing procedures that are longer than 5 steps to keep it simple.
+            If the title of a procedure repeats the chapter title,
+            consider dropping the 'title' attribute of the procedure.
+        </p>
+
+        <procedure title="How to title" id="steps-sequence">
+            <step>
+                <p>Step with a code block.</p>
+
+                <code-block lang="plain text">
+                    Hello, world!
+                </code-block>
+            </step>
+
+            <step>
+                <p>Step with an image.</p>
+
+                <!-- The 'src' attribute should contain the name of an image from the '/images' folder in your project -->
+                <img src="image.png" width="300" alt="Sample"/>
+            </step>
+
+            <step>
+                <p>Step with a list.</p>
+
+                <list>
+                    <li>
+                        <p>List item.</p>
+                    </li>
+                    <li>
+                        <p>List item.</p>
+                    </li>
+                    <li>
+                        <p>List item.</p>
+                    </li>
+                </list>
+            </step>
+        </procedure>
+    </chapter>
+</topic>
