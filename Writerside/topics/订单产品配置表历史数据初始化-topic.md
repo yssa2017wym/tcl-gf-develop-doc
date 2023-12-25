@@ -32,6 +32,28 @@
 
 
 
+
+
+| ORder                     | ORDER_Expand                              | Order_PROduct_COnfig | 优先级 | 备注 |
+| ------------------------- | ----------------------------------------- | -------------------- | ------ | ---- |
+| order_no                  | net_price  （造电价）                     |                      |        |      |
+| fund_id                   | roof_type （设计方案）                    |                      |        |      |
+| roof_type                 | power_rate_foot_method（结算方式）        |                      |        |      |
+| control_oneself           | project_clearn_price（工程款结算单价）    |                      |        |      |
+| approve_price             | project_warranty_price （工程款质保金额） |                      |        |      |
+| exhibition_area_config_id | power_station_financing（电站融资单价）   |                      |        |      |
+| age_scheme                | earnings_deadline（收益期限）             |                      |        |      |
+|                           | payment_cycle（支付周期）                 |                      |        |      |
+|                           | payment_date （支付日期）                 |                      |        |      |
+|                           | equipment_suit （集采设备套装）           |                      |        |      |
+|                           | approve_price （审批单价）                |                      |        |      |
+|                           |                                           |                      |        |      |
+|                           |                                           |                      |        |      |
+
+
+
+
+
 ### 2.1 涉及库表和相关字段
 
 #### 2.1.1 **订单产品配置表**
@@ -121,7 +143,7 @@ Body
 }
 ```
 <note>
-10.74.183.21:30019 是测试3环境订单服务ip和端口
+10.74.183.21:30019 是测试3环境订单服务ip和端口1
 <p>注意：订单号必传</p>
 </note>
 
