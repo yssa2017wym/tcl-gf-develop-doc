@@ -10,7 +10,8 @@
 <!--        <header-logo>writerside.svg</header-logo>-->
         <product-web-url>https://writerside.cn</product-web-url>
         <analytics-head-script-file>head-script.html</analytics-head-script-file>
-        <versions-switcher>https://github.com/yssa2017wym/untitled1/blob/master/Writerside/cfg/help-versions.json</versions-switcher>
+<!--        <versions-switcher>https://github.com/yssa2017wym/untitled1/blob/master/Writerside/cfg/help-versions.json</versions-switcher>-->
+        <versions-switcher>https://raw.githubusercontent.com/lananovikova10/versions-json/main/help-versions.json</versions-switcher>
     </variables>
     <footer>
         <copyright>2023-2024 writerside.cn</copyright>
