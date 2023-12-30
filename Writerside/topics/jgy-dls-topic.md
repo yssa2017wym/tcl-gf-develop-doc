@@ -72,6 +72,12 @@ https://sit2-jgyy-pv.tcl.com/api/webadmin/dealers/472/exhibition/area
 
 
 
+## 3. 获取展业区域回显
+
+![jgy-zyqy.png](jgy-zyqy.png)
+
+通过api/web/product/config/get/product/exhibition/data获取每个产品对应可选的省市区
+通过api/web/admin/dealers/666/exhibition/area获取选中项
 
 
 
