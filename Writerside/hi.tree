@@ -2,35 +2,61 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
+<!--<instance-profile id="hi"-->
+<!--                  name="Help Instance"-->
+<!--                  start-page="Default-topic.md">-->
+<!--    start-page="Default-topic.md">-->
+
 <instance-profile id="hi"
-                 name="Help Instance"
-                 start-page="Default-topic.md">
+                  name="Help Instance"
+                  start-page="prodduct2-0-Starter.md">
 
-    <toc-element topic="Default-topic.md"/>
-    <toc-element topic="合同清单.topic"/>
+    <!--    <toc-element topic="Default-topic.md"/>-->
 
-    <toc-element toc-title="前置系统交互">
-        <toc-element topic="浙银-topic.md"/>
-        <toc-element topic="浦银-topic.md"/>
-        <toc-element topic="越秀-topic.md"/>
-        <toc-element topic="越秀PC-topic.md"/>
-    </toc-element>
+    <toc-element topic="prodduct2-0-Starter.md" toc-title="Home"/>
 
-    <toc-element toc-title="订单产品配置历史数据处理">
-        <toc-element topic="光富宝-同裕-topic.md"/>
-    </toc-element>
-
-    <toc-element toc-title="产品系统2.0">
+    <toc-element toc-title="历史数据处理">
         <toc-element topic="订单产品配置表历史数据初始化-topic.md"/>
-        <toc-element topic="bank-history-data-handle-topic.md"/>
-        <toc-element topic="jgy-dls-topic.md"/>
+
+        <toc-element toc-title="自持产品">
+        </toc-element>
+
+        <toc-element toc-title="非自持产品">
+            <toc-element topic="bank-history-data-handle-topic.md"/>
+            <toc-element topic="光富宝-同裕-topic.md"/>
+        </toc-element>
+
+        <toc-element toc-title="历史数据问题订单">
+
+            <toc-element topic="产品配置历史问题数据处理.md"/>
+        </toc-element>
+
     </toc-element>
 
-    <!--    <toc-element toc-title="环境部署信息">-->
-<!--        <toc-element topic="测试1-topic.md"/>-->
-<!--        <toc-element topic="测试2-topic.md"/>-->
-<!--        <toc-element topic="测试3-topic.md"/>-->
-<!--    </toc-element>-->
+    <toc-element toc-title="涉及子系统">
+        <toc-element toc-title="极光云">
+            <toc-element topic="jgy-dls-topic.md"/>
+        </toc-element>
+        <toc-element toc-title="前置系统">
+            <toc-element topic="浙银-topic.md"/>
+            <toc-element topic="浦银-topic.md"/>
+            <toc-element topic="越秀-topic.md"/>
+            <toc-element topic="越秀PC-topic.md"/>
+        </toc-element>
+    </toc-element>
+
+    <toc-element toc-title="环境信息">
+        <toc-element topic="上线清单.md"/>
+        <toc-element topic="测试1-topic.md"/>
+        <toc-element topic="测试2-topic.md"/>
+        <toc-element topic="测试3-topic.md"/>
+    </toc-element>
+
+    <toc-element toc-title="常见问题">
+        <toc-element topic="合同系统-Q.md"/>
+        <toc-element topic="订单系统-Q.md"/>
+        <toc-element topic="产品系统-Q.md"/>
+    </toc-element>
 
 
 </instance-profile>

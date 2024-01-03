@@ -1,15 +1,16 @@
-# 极光云涉及产品配置
+# 极光云涉及产品系统2.0
 
 ## 1. 代理商详情-查询展业区域
 
 ![jgy-dls-1.png](jgy-dls-1.png)
 
 #### 1.1  /get/product/exhibition/data
-```HTTP
 
+```HTTP
 https://sit2-jgyy-pv.tcl.com/api/web/product/config/get/product/exhibition/data
 
 ```
+
 ```json
 {
   "exhibitionStatus": 0
@@ -48,24 +49,23 @@ https://sit2-jgyy-pv.tcl.com/api/web/product/config/get/product/exhibition/data
 #### 1.2 /admin/dealers/660/exhibition/area
 
 ```HTTP
-
 https://sit2-jgyy-pv.tcl.com/api/web/admin/dealers/660/exhibition/area
 
 ```
+
 ```json
 {
   "exhibitionStatus": 0
 }
 ```
 
-
 ## 2. 新增/编辑展业区域
 
 数据会落到代理商的库
 
 #### 2.1 admin/dealers/472/exhibition/area
-```HTTP
 
+```HTTP
 https://sit2-jgyy-pv.tcl.com/api/webadmin/dealers/472/exhibition/area
 
 ```
@@ -80,4 +80,8 @@ https://sit2-jgyy-pv.tcl.com/api/webadmin/dealers/472/exhibition/area
 通过api/web/admin/dealers/666/exhibition/area获取选中项
 
 
+
+## 4. 解决方案
+
+/api/web/product/config/get/product/exhibition/data 接口 body 参数新增 version 字段传参数，参数为version
 
