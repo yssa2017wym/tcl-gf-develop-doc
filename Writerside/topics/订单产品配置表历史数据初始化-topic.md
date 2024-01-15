@@ -10,21 +10,26 @@
 | 阵列式+庭院房 | 取设计方案下的技术方案集合              | 5号、8号 | 踏勘和施工阶段需要分摊计算审批单价、工程款单价 |
 | 阵列式+阳光房 | 取设计方案下的技术方案集合              | 8号  | 踏勘和施工阶段需要分摊计算审批单价、工程款单价 |
 
-## 2. 历史数据处理流程图
-
-- 有技术方案 农户收益和价格全部从 `exhibition_area_config`表的`power_design_scheme`字段中取
-- 无技术方案 农户收益从`each_earnings_price`字段中取，价格从`project_config`取，并补齐技术方案模式值：xxx-普通方案
-- 工程款结算单价阶梯数据会进行初始化，默认值为0-50000
-- 非自持产品无农户收益
-- 自持产品预审阶段确定设计方案和技术方案
-- 非自持产品预审阶段确定设计方案，踏勘阶段确定技术方案
-- 从拓展表获取相关字段赋值到`order_product_config`表
-
 <note>
 本质上就是把order、order_expand、exhibition_area_config表数据合并成order_product_config表数据
 </note>
 
+**要点:**
+- 有技术方案 农户收益和价格全部从 `exhibition_area_config`表的`power_design_scheme`字段中取
+- 无技术方案 农户收益从`each_earnings_price`字段中取，价格从`project_config`取，并补齐技术方案模式值：xxx-普通方案
+- 工程款结算单价阶梯数据会进行初始化，默认值为0-50000
+- 非自持产品无农户收益
+- 自持产品在**预审阶段**会锁定产品配置,产品配置包含(设计方案和技术方案,技术方案下面挂价格和农户收益)
+- 非自持产品**预审阶段**会锁定产品配置,确定设计方案，**踏勘阶段选择技术方案**
+- 从拓展表获取相关字段赋值到`order_product_config`表
+- 项目公司变更需求小改造,变更后的项目公司历史数据,也会同步刷入到`order_product_config`表
+- 资方交互订单,设计方案为阳光房,在**踏勘阶段**,统一补齐阳光房-普通方案
+- 自持产品订单,设计方案为阳光房,在**预审阶段**,统一补齐阳光房-普通方案
+- **取消的订单也要刷配置** 取消的订单后续可以恢复
+- 拒绝的订单可以不刷配置
 
+
+## 2. 历史数据处理流程图
 
 <img src="order_product_config_his_convert.png" alt="Convert table to XML" width="706" border-effect="line"/>
 
@@ -145,7 +150,7 @@ Body
 <p>注意：订单号必传</p>
 </note>
 
-## CURL调用
+### 3.2 CURL调用示例
 
 <tabs>
     <tab title="linux">
