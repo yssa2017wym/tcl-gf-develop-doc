@@ -65,5 +65,8 @@
         <toc-element topic="农户租金未生成-光富宝-同裕.md"/>
     </toc-element>
 
+    <toc-element toc-title="起租日">
+        <toc-element topic="起租日.md"/>
+    </toc-element>
 
 </instance-profile>
