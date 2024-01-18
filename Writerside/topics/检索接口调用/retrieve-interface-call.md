@@ -48,7 +48,7 @@ index="java" sourcetype="xk-order2" /fundInfo/queryByFundNameAndTenantKey
 
 **示例指令**：
 ```shell
-cat access_log.log |grep '/fundInfo/queryInfoByOrderNo' | head -n 5
+cat /opt/deploy/xk-order2/logs/access/access_log.log |grep '/fundInfo/queryInfoByOrderNo' | head -n 5
 ```
 
 <img src="image_15.png" alt="Alt text" />

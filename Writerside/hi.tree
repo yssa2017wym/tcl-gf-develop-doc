@@ -47,6 +47,11 @@
         </toc-element>
 
         <toc-element topic="上线清单.md"/>
+
+        <toc-element toc-title="订单服务优化">
+            <toc-element topic="OrderClearDeprecatedCode.md"/>
+        </toc-element>
+
     </toc-element>
 
     <toc-element toc-title="环境信息">
