@@ -46,8 +46,7 @@ index="java" sourcetype="xk-order2" /fundInfo/queryByFundNameAndTenantKey
 
 ### 2.3 检索日志
 
-检索日志取前 5 条
-
+**示例指令**：
 ```shell
 cat access_log.log |grep '/fundInfo/queryInfoByOrderNo' | head -n 5
 ```
