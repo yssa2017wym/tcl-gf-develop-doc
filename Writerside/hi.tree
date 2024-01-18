@@ -69,4 +69,8 @@
         <toc-element topic="起租日.md"/>
     </toc-element>
 
+    <toc-element toc-title="检索接口调用">
+        <toc-element topic="retrieve-interface-call.md"/>
+    </toc-element>
+
 </instance-profile>
