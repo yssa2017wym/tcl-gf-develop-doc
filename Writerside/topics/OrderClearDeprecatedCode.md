@@ -1,6 +1,6 @@
 # 订单服务优化
 
-![image_16.png](image_16.png)
+[//]: # (![image_16.png]&#40;image_16.png&#41;)
 
 
 
