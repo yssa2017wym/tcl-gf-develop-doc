@@ -4,3 +4,7 @@
     <var name="product" value="Writerside"/>
     <var name="latest" value="1.2"/>
 </vars>
+
+
+
+<!--全局项目变量及其默认值的列表。请在 writerside.cfg 中的 <vars> 元素中注册此文件。-->
