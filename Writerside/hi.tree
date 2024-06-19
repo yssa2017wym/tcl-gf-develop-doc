@@ -87,9 +87,9 @@
     </toc-element>
 
 
-    <toc-element toc-title="画图">
-        <toc-element topic="Empty-XML-Topic.topic"/>
-    </toc-element>
+<!--    <toc-element toc-title="画图">-->
+<!--        <toc-element topic="Empty-XML-Topic.topic"/>-->
+<!--    </toc-element>-->
 
 
 </instance-profile>
