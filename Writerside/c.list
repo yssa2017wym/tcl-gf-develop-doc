@@ -4,3 +4,9 @@
 <categories>
     <category id="wrs" name="Writerside documentation" order="1"/>
 </categories>
+
+<!--
+    类别列表定义了主题 "另请参见 "部分的相关部件链接组。
+    请在 writerside.cfg 中的 <categories> 元素中注册此文件。
+    以下文件和目录是可选的：
+-->
